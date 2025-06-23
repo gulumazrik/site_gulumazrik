@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GULUMAZRIK - Profile</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fadeIn 0.8s ease-out forwards;
+            }
+            .delay-100 {
+                animation-delay: 0.1s;
+            }
+            .delay-200 {
+                animation-delay: 0.2s;
+            }
+            .delay-300 {
+                animation-delay: 0.3s;
+            }
+            .delay-400 {
+                animation-delay: 0.4s;
+            }
+            .delay-500 {
+                animation-delay: 0.5s;
+            }
+        </style>
+    </head>
+    <body class="overflow-x-hidden">
+        <div
+            class="min-h-screen bg-gradient-to-br from-emerald-800 to-teal-900 flex items-center justify-center p-4"
+        >
+            <div class="max-w-sm w-full space-y-6">
+                <!-- Main Card -->
+                <div
+                    class="bg-black/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl p-8 text-center animate-fade-in opacity-0"
+                >
+                    <!-- Profile Image -->
+                    <div
+                        class="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/50 animate-fade-in opacity-0 delay-100"
+                    >
+                        <img 
+                            src="main1.jpg" 
+                            alt="Profile Image"
+                            class="w-full h-full object-cover"
+                            onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100\" height=\"100\" fill=\"%234b5563\"/%3E%3Ctext x=\"50%\" y=\"50%\" font-size=\"40\" fill=\"%23ffffff\" text-anchor=\"middle\" dominant-baseline=\"middle\"%3EG%3C/text%3E%3C/svg%3E'"
+                        >
+                    </div>
+
+                    <!-- Name -->
+                    <h1 class="text-white text-3xl font-bold mb-2 tracking-wide animate-fade-in opacity-0 delay-200">GULUMAZRIK</h1>
+
+                    <!-- Handle -->
+                    <p class="text-white/70 text-sm mb-8 animate-fade-in opacity-0 delay-300">t.me/veyzov62</p>
+
+                    <!-- Buttons -->
+                    <div class="space-y-3">
+                        <a href="https://t.me/veyzov62"
+                            class="block w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors animate-fade-in opacity-0 delay-300"
+                        >
+                            TELEGRAM
+                        </a>
+
+                        <div class="flex gap-3 animate-fade-in opacity-0 delay-400">
+                            <a href="https://t.me/guludef"
+                                class="flex-1 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors"
+                            >
+                                DEF
+                            </a>
+                            <a href="https://t.me/gulumazr_nij"
+                                class="flex-1 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors"
+                            >
+                                TGK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Card -->
+                <div class="bg-black/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl p-6 animate-fade-in opacity-0 delay-400">
+                    <p class="text-white text-center text-sm leading-relaxed">
+                        "Жизнь - это путешествие, полное открытий и возможностей"
+                    </p>
+                </div>
+
+                <!-- Languages Card -->
+                <div class="bg-black/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl p-6 animate-fade-in opacity-0 delay-500">
+                    <p class="text-white text-center text-sm">
+                        Я пишу на: C++ • C# • Python • JavaScript • Java
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                setTimeout(() => {
+                    document.body.classList.remove('overflow-x-hidden');
+                }, 1000);
+            });
+        </script>
+    </body>
+</html>
